@@ -1,0 +1,97 @@
+:root {
+  /* Color */
+  --yellow-color: #ffba00;
+  --green-color: #264a36;
+  --black-color: #292929;
+  --gray-color: #989898;
+  --white-color: #ffffff;
+
+  /* Font Size */
+  --font-large: 40px;
+  --font-midium: 20px;
+  --font-small: 14px;
+  --font-micro: 13px;
+
+  /* Space Size */
+  --space-large: 160px;
+  --space-midium: 30px;
+  --space-small: 5px;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black-color);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  margin: var(--space-midium) var(--space-large);
+}
+
+/* Header-Menu */
+.header__menu {
+  display: flex;
+}
+
+.header__menu li {
+  margin-right: calc(var(--space-large) / 2);
+  font-size: var(--font-midium);
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+/* Header-Button */
+.header__buttons {
+  display: flex;
+}
+
+.header__buttons li {
+  width: 80px;
+  height: 40px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: var(--space-small);
+}
+
+.header__buttons li:nth-child(1) {
+  background-color: var(--yellow-color);
+}
+
+.header__buttons li:nth-child(2) {
+  background-color: var(--green-color);
+}
+
+.header__buttons li a {
+  color: var(--white-color);
+  font-size: var(--font-micro);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Header-Search */
+.header__search {
+  margin-right: var(--space-large);
+  font-size: var(--font-large);
+}
