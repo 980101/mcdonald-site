@@ -104,3 +104,32 @@ button {
   margin-right: var(--space-large);
   font-size: var(--font-large);
 }
+
+/* Aside */
+.aside {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  position: fixed;
+  right: var(--space-midium);
+  bottom: calc(var(--space-midium) * 2);
+}
+
+.aside img {
+  width: var(--aside-img);
+  height: var(--aside-img);
+}
+
+.aside__top {
+  margin-top: var(--space-midium);
+  padding-bottom: var(--space-small);
+  border-bottom: 1px solid var(--black-color);
+}
+
+.aside__top span {
+  color: var(--black-color);
+  font-size: var(--font-midium);
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-right: -3px;
+}
