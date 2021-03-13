@@ -17,6 +17,8 @@
   --space-midium: 30px;
   --space-small: 5px;
 
+  /* Element Size */
+  --aside-img: 120px;
 }
 
 * {
@@ -38,6 +40,13 @@ a {
   color: var(--black-color);
 }
 
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+/* Header */
 .header {
   display: flex;
   justify-content: space-between;
@@ -48,7 +57,7 @@ a {
   margin: var(--space-midium) var(--space-large);
 }
 
-/* Header-Menu */
+/* Header__Header-Menu */
 .header__menu {
   display: flex;
 }
@@ -60,7 +69,7 @@ a {
   white-space: nowrap;
 }
 
-/* Header-Button */
+/* Header__Header-Button */
 .header__buttons {
   display: flex;
 }
@@ -90,7 +99,7 @@ a {
   text-transform: uppercase;
 }
 
-/* Header-Search */
+/* Header__Header-Search */
 .header__search {
   margin-right: var(--space-large);
   font-size: var(--font-large);
